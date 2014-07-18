@@ -2,8 +2,7 @@ package hoja_trabajo2;
 
 import java.util.ArrayList;
 
-public class StackArrayList<E>
- implements Stack<E>
+public class StackArrayList<E> implements Stack<E>
 {
 	protected ArrayList<E> data;
 
