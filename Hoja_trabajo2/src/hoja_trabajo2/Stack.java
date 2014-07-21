@@ -29,5 +29,6 @@ public interface Stack<E> {
    
    public int size();
    // post: returns the number of elements in the stack
+   
 
 }
