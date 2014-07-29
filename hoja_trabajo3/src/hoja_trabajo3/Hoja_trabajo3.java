@@ -14,6 +14,8 @@ public class Hoja_trabajo3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        QuickSort quick = new QuickSort();
+        
         Datos datos; 
         datos = new Datos(); 
         try{
@@ -25,6 +27,7 @@ public class Hoja_trabajo3 {
              /*Si hubo error cargando el archivo, termina el programa*/
             System.exit(0);
         }
+        quick.ordenar();
         
         
 
