@@ -34,7 +34,7 @@ public class BubbleSort {
         }
         catch(Exception e)
         {
-            System.out.println("Hubo un error ");
+            System.out.println("Hubo un error generando los datos ");
              /*Si hubo error cargando el archivo, termina el programa*/
             System.exit(0);
         }
@@ -86,8 +86,10 @@ public class BubbleSort {
     public void cambiar(ArrayList<Integer> numerosI, int i, int j){
         int temp; 
         temp = numerosI.get(i);
-        int jValue=numerosI.get(j);
-        numerosI.set(i, jValue); 
+        //int jValue=numerosI.get(j);
+        //numerosI.set(i, jValue); 
+        numerosI.set(i, numerosI.get(j)); 
+        numerosI.set(j, temp);
         temp = numerosI.get(j); 
         
     }
@@ -101,7 +103,7 @@ public class BubbleSort {
             //se cambia el elemento mas grande a una posicion mas arriba
             for(i = 1; i<numerosI.size()-numSorted; i++){
                 if(numerosI.get(i-1) > numerosI.get(i)){
-                    System.out.println(numerosI.get(i-1)+" >"+ numerosI.get(i));
+                    //System.out.println(numerosI.get(i-1)+" >"+ numerosI.get(i));
                     cambiar(numerosI,i-1,i); 
                 }
              }

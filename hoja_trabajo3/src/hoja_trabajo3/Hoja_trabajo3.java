@@ -21,7 +21,7 @@ public class Hoja_trabajo3 {
         }
         catch(Exception e)
         {
-            System.out.println("Hubo un error ");
+            System.out.println("Hubo un error en la clase bubbleSort");
              /*Si hubo error cargando el archivo, termina el programa*/
             System.exit(0);
         }
