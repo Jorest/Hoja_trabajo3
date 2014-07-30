@@ -14,10 +14,10 @@ public class Hoja_trabajo3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Datos datos; 
-        datos = new Datos(); 
+        BubbleSort bubbleSort; 
+        bubbleSort = new BubbleSort(); 
         try{
-            datos.generarDatos();
+            bubbleSort.abrir();
         }
         catch(Exception e)
         {
