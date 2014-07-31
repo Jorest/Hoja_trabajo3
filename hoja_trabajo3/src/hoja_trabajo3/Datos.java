@@ -15,7 +15,10 @@ public class Datos {
     //se crea un arreglo para guardar los enteros random
     ArrayList<Integer> numeros = new ArrayList<Integer>();
     
-    
+    /**
+     *
+     * @throws FileNotFoundException
+     */
     public  void generarDatos()throws FileNotFoundException{
         //se crea PrintWriter para guardar los numeros en el archivo
         PrintWriter writer = new PrintWriter("Datos.txt"); 

@@ -2,6 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ESTO FUE LO PRIMERO QUE EDITEEEEEEEEEEEE
  */
 
 package hoja_trabajo3;
@@ -26,7 +27,12 @@ public class BubbleSort {
     int i, j; 
 
     //método que llama ala clase Datos para generar los numeros que se utilizaran 
-    public void abrir() throws FileNotFoundException{
+
+    /**
+     *
+     * @throws FileNotFoundException
+     */
+        public void abrir() throws FileNotFoundException{
         Datos datos; 
         datos = new Datos(); 
         try{
@@ -44,7 +50,12 @@ public class BubbleSort {
     
     
     //se copia el archivo de datos a una lista 
-    public void generarLista() throws FileNotFoundException {
+
+    /**
+     *
+     * @throws FileNotFoundException
+     */
+        public void generarLista() throws FileNotFoundException {
         //Static Scanner and File Objects
 	 Scanner scanner = new Scanner(new File("Datos.txt"));
         //Instantiate Scanner s with f variable within parameters
@@ -69,7 +80,13 @@ public class BubbleSort {
         generarListaInt(numerosS);
     }
     //se cambian los datos del arrayList numerosS a enteros 
-    public ArrayList<Integer> generarListaInt(ArrayList<String> numerosS){
+
+    /**
+     *
+     * @param numerosS
+     * @return
+     */
+        public ArrayList<Integer> generarListaInt(ArrayList<String> numerosS){
         ArrayList<Integer> numerosI = new ArrayList<Integer>();
         for(String string: numerosS){
             //convertir String a entero
@@ -83,7 +100,14 @@ public class BubbleSort {
     
     
     //Referencia: Java Structures: Data Structures for the Principled Programmer
-    public void cambiar(ArrayList<Integer> numerosI, int i, int j){
+
+    /**
+     *
+     * @param numerosI
+     * @param i
+     * @param j
+     */
+        public void cambiar(ArrayList<Integer> numerosI, int i, int j){
         int temp; 
         temp = numerosI.get(i);
         //int jValue=numerosI.get(j);
@@ -94,15 +118,19 @@ public class BubbleSort {
         
     }
     
-    
     //Referencia: Java Structures: Data Structures for the Principled Programmer
-    public void bubbleSort(ArrayList<Integer> numerosI){
+
+    /**
+     *
+     * @param numerosI
+     */
+        public void bubbleSort(ArrayList<Integer> numerosI){
         int numSorted = 0; 
         int index; 
         while(numSorted<numerosI.size()){
             //se cambia el elemento mas grande a una posicion mas arriba
             for(i = 1; i<numerosI.size()-numSorted; i++){
-                if(numerosI.get(i-1) > numerosI.get(i)){
+                if((numerosI.get(i-1)).compareTo(numerosI.get(i))>0){
                     //System.out.println(numerosI.get(i-1)+" >"+ numerosI.get(i));
                     cambiar(numerosI,i-1,i); 
                 }
