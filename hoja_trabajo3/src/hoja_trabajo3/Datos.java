@@ -27,10 +27,11 @@ public class Datos {
            
             for(int i=0;i<2001;i++){
                 Random random = new Random(); 
-                int num = random.nextInt(2001);
+                 int num = random.nextInt(2001);
                 //System.out.println(num);
                 //System.out.println(i);
                 numeros.add(num); 
+                //numeros.add(i); 
                 
              }
             for(int i=0; i<numeros.size();i++){
@@ -39,6 +40,7 @@ public class Datos {
                 
             }
             writer.close();
+            System.out.println("Se generaron los datos"); 
              
         }
         catch(Exception e)
