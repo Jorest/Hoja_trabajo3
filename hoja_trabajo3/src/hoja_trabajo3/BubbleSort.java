@@ -2,7 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-ESTO FUE LO PRIMERO QUE EDITEEEEEEEEEEEE
+
  */
 
 package hoja_trabajo3;
@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class BubbleSort {
     
-    int numeros[];
+    //int numeros[];
     /*Declaracion de variables*/
     String micadena = null;
     String linea=null;
@@ -139,5 +139,7 @@ public class BubbleSort {
         }
         System.out.println(numerosI); 
     }
+       
+    
     
 }
